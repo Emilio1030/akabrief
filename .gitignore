@@ -1,0 +1,6 @@
+notebook/data
+.env
+akabrief/interface/.streamlit/secrets.toml
+akabrief/.streamlit/secrets.toml
+.streamlit/secrets.toml
+akabrief/common/.streamlit/secrets.toml
