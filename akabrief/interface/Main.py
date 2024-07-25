@@ -365,10 +365,10 @@ def main():
                 except Exception as e:
                     pass
 
-        link = "https://github.com/DanTCIM/doc-summary-qna"
-        st.caption(
-            f"🖋️ The Python code and documentation of the project are in [GitHub]({link})."
-        )
+        # link = "https://github.com/DanTCIM/doc-summary-qna"
+        # st.caption(
+        #     f"🖋️ The Python code and documentation of the project are in [GitHub]({link})."
+        # )
 
 
 if __name__ == "__main__":
