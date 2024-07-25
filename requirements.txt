@@ -1,56 +1,10 @@
-# langchain and related packages
-langchain==0.1.15
-langchain-experimental==0.0.57
-langchain-pinecone==0.1.0
-langchain-community==0.0.32
-langchain-chroma==0.1.0
-langchain-openai
-langchain_anthropic
+matplotlib
+langchain-community
+unstructured[pdf]
+pdfminer.six
 
-# OpenAI
-openai==1.17.1
-
-# Pinecone
-pinecone-client==3.2.2
-
-# PDF and text processing
-pdfminer.six==20231228
-PyPDF2
-pypdf
-pdf2image==1.17.0
-docx2txt==0.8
-
-# Streamlit for web app
-streamlit
-
-# NLP and data processing
-nltk
-pandas
-scikit-learn
-textblob
-markdown
-unstructured
-
-# OpenCV
-# opencv-python-headless==4.5.4.60
-# opencv-contrib-python==4.8.1.78
-opencv-python
-
-
-# Machine Learning
-transformers==4.40.2
-#gpt4all
-#huggingface-hub==0.23.0
-tiktoken
-
-
-# Image processing
-pillow==9.5.0
-
-
-# Statistical models
-statsmodels
-scipy
+pdf2image
+Pillow
 
 # Other utilities
 python-dotenv
@@ -62,6 +16,84 @@ setuptools>=26
 twine
 wheel>=0.29
 htbuilder
+
+# Streamlit for web app
+streamlit
+
+# # langchain and related packages
+# langchain==0.1.15
+# langchain-experimental==0.0.57
+langchain-pinecone
+# langchain-chroma==0.1.0
+langchain-openai
+langchain_anthropic
+
+# # OpenAI
+# openai==1.17.1
+
+# # Pinecone
+# pinecone-client==3.2.2
+
+# # PDF and text processing
+# pdfminer.six==20231228
+# PyPDF2
+# pypdf
+# pdf2image==1.17.0
+# docx2txt==0.8
+
+# # Streamlit for web app
+# streamlit
+
+# # NLP and data processing
+# nltk
+# pandas
+# scikit-learn
+# textblob
+# markdown
+# unstructured
+
+# # OpenCV
+# # opencv-python-headless==4.5.4.60
+# # opencv-contrib-python==4.8.1.78
+# opencv-python
+
+
+# # Machine Learning
+# transformers==4.40.2
+# #gpt4all
+# #huggingface-hub==0.23.0
+# tiktoken
+
+
+# # Image processing
+# pillow==9.5.0
+
+
+# # Statistical models
+# statsmodels
+# scipy
+
+# # Other utilities
+# python-dotenv
+# ipython
+# ipdb
+# psycopg2-binary
+# pip>=9
+# setuptools>=26
+# twine
+# wheel>=0.29
+# htbuilder
+
+
+
+
+
+
+
+
+
+
+
 
 # Ensure proper installation of dependencies
 #numpy==1.24.4
