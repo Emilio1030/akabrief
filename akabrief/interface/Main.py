@@ -18,11 +18,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../../'
 # )
 
 
-from akasum.common.prompt import summary_prompt
-from akasum.common.sidebar import sidebar_content
-from akasum.common.chat_history import display_chat_history, clear_chat_history, convert_df
+from akabrief.common.prompt import summary_prompt
+from akabrief.common.sidebar import sidebar_content
+from akabrief.common.chat_history import display_chat_history, clear_chat_history, convert_df
 
-from akasum.common.utils import (
+from akabrief.common.utils import (
 
     StreamHandler,
     PrintRetrievalHandler,
