@@ -3,17 +3,27 @@ import streamlit as st
 
 def sidebar_content(model_name):
     with st.sidebar:
-        st.header("**Actuary Helper**")
+        st.header("**AKABRIEF**")
         st.write(
-            f"The *{model_name}*-powered AI tool is designed to enhance the efficiency of actuaries by summarizing actuarial documents and providing answers to document-related questions. The tool uses **retrieval augmented generation (RAG)** to help Q&A."
+            f"Welcome to **AKABRIEF**"
         )
         st.write(
-            "**AI's responses should not be relied upon as accurate or error-free.** The quality of the retrieved contexts and responses may depend on LLM algorithms, RAG parameters, and how questions are asked. Harness its power but **with accountability and responsibility**."
-        )
-        st.write(
-            "Actuaries are strongly advised to **evaluate for accuracy** when using the tool. Read the retrieved contexts to compare to AI's responses. The process is built for educational purposes only."
+            "AKABRIEF empowers users to effortlessly summarize documents and find answers to document-related questions."
         )
 
+        st.markdown("Created by [Emilio Aguiar](https://www.linkedin.com/in/emilioaguiar/).")
+
+        # Add "Star on GitHub" link to the sidebar
+        badge_html = """
+        <a href="https://emilio1030.github.io/ParticleGround-Portfolio/">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Portfolio-Python-brightgreen?logo=python">
+        </a>
+        """
+        st.markdown(badge_html, unsafe_allow_html=True)
+
+        st.markdown("""---""")
+
+        st.sidebar.header("Features")
         with st.expander("⚙️ RAG Parameters"):
             st.session_state.num_source = st.slider(
                 "Top N sources to view:", min_value=4, max_value=20, value=5, step=1

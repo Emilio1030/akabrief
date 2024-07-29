@@ -18,7 +18,7 @@ def display_chat_history(msgs):
 
 def clear_chat_history(msgs):
     msgs.clear()
-    msgs.add_ai_message("Welcome to actuarial document summarizer and Q&A tool!")
+    msgs.add_ai_message("Welcome to AKAbrief!")
 
 
 def convert_df(msgs):
