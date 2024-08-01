@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-
 def display_chat_history(msgs):
     tmp_query = ""
     avatars = {"human": "user", "ai": "assistant"}
@@ -9,7 +8,7 @@ def display_chat_history(msgs):
         if msg.content.startswith("Query:"):
             tmp_query = msg.content.lstrip("Query: ")
         elif msg.content.startswith("# Retrieval"):
-            with st.expander(f"📖 **Context Retrieval:** {tmp_query}", expanded=False):
+            with st.expander(f"**Context Retrieval:** {tmp_query}", expanded=False):
                 st.write(msg.content, unsafe_allow_html=True)
         else:
             tmp_query = ""
