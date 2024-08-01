@@ -100,6 +100,19 @@ def load_document(uploaded_file):
     if uploaded_file.name.endswith(".pdf"):
         #return PDFMinerLoader(uploaded_file.name, concatenate_pages=True)
         return UnstructuredFileLoader(uploaded_file.name)
+
+    elif uploaded_file.name.endswith(".jpeg"):
+    #return PDFMinerLoader(uploaded_file.name, concatenate_pages=True)
+        return UnstructuredFileLoader(uploaded_file.name)
+
+    elif uploaded_file.name.endswith(".jpg"):
+    #return PDFMinerLoader(uploaded_file.name, concatenate_pages=True)
+        return UnstructuredFileLoader(uploaded_file.name)
+
+    elif uploaded_file.name.endswith(".png"):
+    #return PDFMinerLoader(uploaded_file.name, concatenate_pages=True)
+        return UnstructuredFileLoader(uploaded_file.name)
+
     elif uploaded_file.name.endswith(".docx"):
         return Docx2txtLoader(uploaded_file.name)
     elif uploaded_file.name.endswith(".txt"):
@@ -168,8 +181,10 @@ def main():
     pc = Pinecone(api_key=st.secrets["PINECONE_API_KEY"])
 
     # Start Streamlit session
-    st.set_page_config(page_title="Doc Summary Q&A Tool", page_icon="📖")
-    st.header("Actuarial Document Summarizer and Q&A Tool")
+
+    # Start Streamlit session
+    st.set_page_config(page_title="AKABRIEF", page_icon="icon/box.png")
+    st.header("AKABRIEF")
     st.write("Click the button in the sidebar to summarize.")
     # Setup uploader
     uploaded_file = st.file_uploader(
@@ -250,7 +265,7 @@ def main():
     )
     # Initialize the chat history
     if len(msgs.messages) == 0:
-        msgs.add_ai_message("Welcome to actuarial document summarizer and Q&A tool!")
+        msgs.add_ai_message("AKABRIEF!")
 
     # Show the chat history
     display_chat_history(msgs)

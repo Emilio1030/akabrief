@@ -13,6 +13,11 @@ def sidebar_content(model_name):
 
         st.markdown("Created by [Emilio Aguiar](https://www.linkedin.com/in/emilioaguiar/).")
 
+
+        st.write(
+            "Check out the [AKAQUERY](https://akaquery.streamlit.app/) app for consulting on insurance-related legislation"
+        )
+
         # Add "Star on GitHub" link to the sidebar
         badge_html = """
         <a href="https://emilio1030.github.io/ParticleGround-Portfolio/">
